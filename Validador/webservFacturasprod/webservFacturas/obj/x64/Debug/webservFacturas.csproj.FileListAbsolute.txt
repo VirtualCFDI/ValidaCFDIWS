@@ -1,0 +1,6 @@
+C:\inetpub\wwwroot\webservFacturasprod\webservFacturas\bin\x64\Debug\webservFacturas.dll
+C:\inetpub\wwwroot\webservFacturasprod\webservFacturas\bin\x64\Debug\webservFacturas.pdb
+C:\inetpub\wwwroot\webservFacturasprod\webservFacturas\bin\x64\Debug\ChilkatDotNet2.dll
+C:\inetpub\wwwroot\webservFacturasprod\webservFacturas\obj\x64\Debug\ResolveAssemblyReference.cache
+C:\inetpub\wwwroot\webservFacturasprod\webservFacturas\obj\x64\Debug\webservFacturas.dll
+C:\inetpub\wwwroot\webservFacturasprod\webservFacturas\obj\x64\Debug\webservFacturas.pdb

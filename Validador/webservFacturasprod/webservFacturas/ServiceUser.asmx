@@ -1,0 +1,1 @@
+﻿<%@ WebService Language="C#" CodeBehind="ServiceUser.asmx.cs" Class="webservFacturas.Service1" %>

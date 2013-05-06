@@ -1,0 +1,10 @@
+C:\Users\LUISACA\Dropbox\Codigo Proyectos\Fausto\Modificado\inetpub\wwwroot\30\bin\webservFacturas.dll
+C:\Users\LUISACA\Dropbox\Codigo Proyectos\Fausto\Modificado\inetpub\wwwroot\30\bin\webservFacturas.pdb
+C:\Users\LUISACA\Dropbox\Codigo Proyectos\Fausto\Modificado\inetpub\wwwroot\30\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\LUISACA\Dropbox\Codigo Proyectos\Fausto\Modificado\inetpub\wwwroot\30\obj\Debug\webservFacturas.dll
+C:\Users\LUISACA\Dropbox\Codigo Proyectos\Fausto\Modificado\inetpub\wwwroot\30\obj\Debug\webservFacturas.pdb
+C:\Users\LUISACA\Dropbox\Codigo Proyectos\Fausto\Modificado\inetpub\wwwroot\Validador\bin\webservFacturas.dll
+C:\Users\LUISACA\Dropbox\Codigo Proyectos\Fausto\Modificado\inetpub\wwwroot\Validador\bin\webservFacturas.pdb
+C:\Users\LUISACA\Dropbox\Codigo Proyectos\Fausto\Modificado\inetpub\wwwroot\Validador\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\LUISACA\Dropbox\Codigo Proyectos\Fausto\Modificado\inetpub\wwwroot\Validador\obj\Debug\webservFacturas.dll
+C:\Users\LUISACA\Dropbox\Codigo Proyectos\Fausto\Modificado\inetpub\wwwroot\Validador\obj\Debug\webservFacturas.pdb

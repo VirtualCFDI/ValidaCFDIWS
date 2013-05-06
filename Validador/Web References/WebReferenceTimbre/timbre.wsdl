@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tns="lib/soap/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns="http://schemas.xmlsoap.org/wsdl/" targetNamespace="lib/soap/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="lib/soap/">
+      <xsd:import namespace="http://schemas.xmlsoap.org/soap/encoding/" />
+      <xsd:import namespace="http://schemas.xmlsoap.org/wsdl/" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="GenSelloPacRequest">
+    <wsdl:part name="Cadena" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:message name="GenSelloPacResponse">
+    <wsdl:part name="return" type="xsd:string" />
+  </wsdl:message>
+  <wsdl:portType name="FuncionesPlataformasPortType">
+    <wsdl:operation name="GenSelloPac">
+      <wsdl:input message="tns:GenSelloPacRequest" />
+      <wsdl:output message="tns:GenSelloPacResponse" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="FuncionesPlataformasBinding" type="tns:FuncionesPlataformasPortType">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" style="rpc" />
+    <wsdl:operation name="GenSelloPac">
+      <soap:operation soapAction="http://192.168.80.10/wsdl3.2/timbre.php/GenSelloPac" style="rpc" />
+      <wsdl:input>
+        <soap:body use="encoded" namespace="lib/soap/" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="encoded" namespace="lib/soap/" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="FuncionesPlataformas">
+    <wsdl:port name="FuncionesPlataformasPort" binding="tns:FuncionesPlataformasBinding">
+      <soap:address location="http://192.168.80.10/wsdl3.2/timbre.php" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

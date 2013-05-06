@@ -1,0 +1,28 @@
+C:\inetpub\wwwroot\wsdl\webservFacturas\webservFacturas\bin\webservFacturas.dll
+C:\inetpub\wwwroot\wsdl\webservFacturas\webservFacturas\bin\webservFacturas.pdb
+C:\inetpub\wwwroot\wsdl\webservFacturas\webservFacturas\obj\Debug\ResolveAssemblyReference.cache
+C:\inetpub\wwwroot\wsdl\webservFacturas\webservFacturas\obj\Debug\webservFacturas.dll
+C:\inetpub\wwwroot\wsdl\webservFacturas\webservFacturas\obj\Debug\webservFacturas.pdb
+C:\inetpub\wwwroot\wsdl\webservFacturasprod\webservFacturas\bin\webservFacturas.dll
+C:\inetpub\wwwroot\wsdl\webservFacturasprod\webservFacturas\bin\webservFacturas.pdb
+C:\inetpub\wwwroot\wsdl\webservFacturasprod\webservFacturas\obj\Debug\ResolveAssemblyReference.cache
+C:\inetpub\wwwroot\wsdl\webservFacturasprod\webservFacturas\obj\Debug\webservFacturas.dll
+C:\inetpub\wwwroot\wsdl\webservFacturasprod\webservFacturas\obj\Debug\webservFacturas.pdb
+C:\inetpub\wwwroot\webservFacturasprod\webservFacturas\bin\webservFacturas.dll
+C:\inetpub\wwwroot\webservFacturasprod\webservFacturas\bin\webservFacturas.pdb
+C:\inetpub\wwwroot\webservFacturasprod\webservFacturas\bin\ChilkatDotNet2.dll
+C:\inetpub\wwwroot\webservFacturasprod\webservFacturas\obj\Debug\ResolveAssemblyReference.cache
+C:\inetpub\wwwroot\webservFacturasprod\webservFacturas\obj\Debug\webservFacturas.dll
+C:\inetpub\wwwroot\webservFacturasprod\webservFacturas\obj\Debug\webservFacturas.pdb
+C:\inetpub\wwwroot\30\webservFacturasprod\webservFacturas\bin\webservFacturas.dll
+C:\inetpub\wwwroot\30\webservFacturasprod\webservFacturas\bin\webservFacturas.pdb
+C:\inetpub\wwwroot\30\webservFacturasprod\webservFacturas\bin\ChilkatDotNet2.dll
+C:\inetpub\wwwroot\30\webservFacturasprod\webservFacturas\obj\Debug\ResolveAssemblyReference.cache
+C:\inetpub\wwwroot\30\webservFacturasprod\webservFacturas\obj\Debug\webservFacturas.dll
+C:\inetpub\wwwroot\30\webservFacturasprod\webservFacturas\obj\Debug\webservFacturas.pdb
+C:\Users\LUISACA\Dropbox\Codigo Proyectos\Fausto\Modificado\inetpub\wwwroot\30\webservFacturasprod\webservFacturas\bin\webservFacturas.dll
+C:\Users\LUISACA\Dropbox\Codigo Proyectos\Fausto\Modificado\inetpub\wwwroot\30\webservFacturasprod\webservFacturas\bin\webservFacturas.pdb
+C:\Users\LUISACA\Dropbox\Codigo Proyectos\Fausto\Modificado\inetpub\wwwroot\30\webservFacturasprod\webservFacturas\bin\ChilkatDotNet2.dll
+C:\Users\LUISACA\Dropbox\Codigo Proyectos\Fausto\Modificado\inetpub\wwwroot\30\webservFacturasprod\webservFacturas\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\LUISACA\Dropbox\Codigo Proyectos\Fausto\Modificado\inetpub\wwwroot\30\webservFacturasprod\webservFacturas\obj\Debug\webservFacturas.dll
+C:\Users\LUISACA\Dropbox\Codigo Proyectos\Fausto\Modificado\inetpub\wwwroot\30\webservFacturasprod\webservFacturas\obj\Debug\webservFacturas.pdb

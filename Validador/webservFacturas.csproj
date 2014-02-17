@@ -46,7 +46,7 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Validación.asmx" />
+    <Content Include="Validación.asmx" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>
@@ -68,11 +68,8 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
       <DependentUpon>Settings.settings</DependentUpon>
     </Compile>
-    <Compile Include="Validación.asmx.cs">
-      <DependentUpon>Validación.asmx</DependentUpon>
-      <SubType>Component</SubType>
-    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Validación.asmx.cs" />
     <Compile Include="Web References\WebReferenceTimbre\Reference.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>

@@ -438,7 +438,7 @@ namespace webservFacturas.funciones
         public void Inserta_LogAcceso(string xml, string UUID, string msgadd)
         {
             //Se obtiene la direccion IP del cliente.
-            IPAddress ip = Dns.GetHostAddresses(Dns.GetHostName()).Where(address => address.AddressFamily == AddressFamily.InterNetwork).First();
+            IPAddress ip = Dns.GetHostAddresses(Dns.GetHostName()).Where;
 
             webservFacturas.conexion.conector conexion = new webservFacturas.conexion.conector();
 

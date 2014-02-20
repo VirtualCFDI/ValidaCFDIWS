@@ -16,3 +16,4 @@ C:\Users\desarrollo\Documents\GitHub\ValidaCFDIWS\Validador\bin\webservFacturas.
 C:\Users\desarrollo\Documents\GitHub\ValidaCFDIWS\Validador\bin\webservFacturas.pdb
 C:\Users\desarrollo\Documents\GitHub\ValidaCFDIWS\Validador\obj\Debug\webservFacturas.dll
 C:\Users\desarrollo\Documents\GitHub\ValidaCFDIWS\Validador\obj\Debug\webservFacturas.pdb
+C:\Users\desarrollo\Documents\GitHub\ValidaCFDIWS\Validador\obj\Debug\webservFacturas.csprojResolveAssemblyReference.cache

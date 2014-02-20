@@ -14,6 +14,8 @@ using System.Security.Cryptography;
 using System.Text.RegularExpressions;
 using System.Data.SqlClient;
 using System.Configuration;
+using System.Net;
+using System.Net.Sockets;
 namespace webservFacturas.funciones
 {
     public class funciones
@@ -24,7 +26,7 @@ namespace webservFacturas.funciones
         public bool isIDLogCorrect(string idacceso)
         {
             webservFacturas.conexion.conector Conexion = new webservFacturas.conexion.conector();
-            string sql = "SELECT * FROM aplicaciones WHERE iidacceso = '" + idacceso + "' AND  iactivo = 1";
+            string sql = "SELECT * FROM clientesprepago WHERE iidacceso = '" + idacceso + "' AND  iactivo = 1";
             int cantidad = 0;
             DataTable dt = new DataTable();
             dt = webservFacturas.conexion.conector.Consultasql(sql);
@@ -58,7 +60,7 @@ namespace webservFacturas.funciones
             return iidacceso;
         }
 
-        //FUnción para insertar Petición.
+        //Función para insertar Petición.
         public string Inserta_FirstPeticion(string xml, string UUID, string idacceso,string msgadd, string versionp) {
             webservFacturas.conexion.conector conexion = new webservFacturas.conexion.conector();           
             string pstrClientAddress = HttpContext.Current.Request.UserHostAddress;
@@ -86,7 +88,7 @@ namespace webservFacturas.funciones
                 tagemisor = "cfdi:Emisor";
                 tagreceptor = "cfdi:Receptor";
             }
-            //Leemos el nodo "Comprbante".
+            //Leemos el nodo "Comprobante".
             XmlNodeList elemList = doc2.GetElementsByTagName(tagcomprobante);
             for (int i = 0; i < elemList.Count; i++)
             {   
@@ -97,7 +99,7 @@ namespace webservFacturas.funciones
             //Inicializamos las variables.
             string RFC = "";
             string razon_emisor = "";
-            //Leeos el Nodo Emisor.
+            //Leemos el Nodo Emisor.
             XmlNodeList EmisorList = doc2.GetElementsByTagName(tagemisor);
             for (int i = 0; i < EmisorList.Count; i++)
             {
@@ -145,9 +147,17 @@ namespace webservFacturas.funciones
         public bool SaveErrorLog(string UUID, string codigoerror, string msg, string IID)
         {
             webservFacturas.conexion.conector conexion = new webservFacturas.conexion.conector();
-            string sql = "UPDATE TmpSol_Intentos_Validaciones SET vchcodError = '"+codigoerror+"', vchmsgError = '"+msg+"', dfecha_salida = GETDATE() "+
-            " WHERE vchuuid = '" + UUID + "'  AND iid = " + IID;
+
+            string sql = "INSERT INTO TmpSol_Intentos_Validaciones(vchuuid,vchcodError,vchmsgError,iid) VALUES('" + UUID + "','" + codigoerror + "','" + msg + "', '"+ IID +"')";
+               
+
+           /*
+            string sql = "UPDATE TmpSol_Intentos_Validaciones SET (vchuuid, vchcodError, vchmsgError,iid ) values('" + UUID + "','" + codigoerror + "','" + msg + "','" + IID + "')";
+            */
             return conexion.InsertaSql(sql);
+            
+
+          
         }
 
         //Función para Guardar la Cadena Original del XML, en Base de Datos.
@@ -427,13 +437,24 @@ namespace webservFacturas.funciones
         //Función para Insertar Registro de Acceso a la Base de Datos.
         public void Inserta_LogAcceso(string xml, string UUID, string msgadd)
         {
+            //Se obtiene la direccion IP del cliente.
+            IPAddress ip = Dns.GetHostAddresses(Dns.GetHostName()).Where(address => address.AddressFamily == AddressFamily.InterNetwork).First();
+
             webservFacturas.conexion.conector conexion = new webservFacturas.conexion.conector();
+
+            string sql = "INSERT INTO WebService (vchIP, vchUUIDAcceso, vchXML ) values('" +ip+ "','" + UUID + "','" + xml + "')";
+            conexion.InsertaSql(sql);
+
+            /*
             string sql = "" +
                 "INSERT INTO WebService " +
-                "(dfecha, vchLocation, vchUsuario, vchMensaje )" +
+                "(vchUUIDAcceso )" +
                 "VALUES" +
-                "(GETDATE(), 'WSValida','" + UUID + "','-" + xml + "')";
-            conexion.InsertaSql(sql);
+                "('" + UUID + "')";
+            conexion.InsertaSql(sql);*/
+
+        
+                     
         }
 
         //Función para validar la estructura del RFC

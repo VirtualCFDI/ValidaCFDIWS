@@ -27,7 +27,7 @@ namespace webservFacturas
         public string ValidarFactura(string xml, string idacceso, string comentarios)
         {
             //Inicializamos la variable versión.
-            //string versionp = "";
+            //string version = "";
 			string versionp = "3.2";
             string addendap = "";
             //Declaramos las funciones
@@ -73,7 +73,7 @@ namespace webservFacturas
                     {
                         //Asignamos el nodo de la versión a una variable.
                         addendap = Addenda[i].Value;
-;                    }
+                    }
                     //Si la variable versión esta vacia.
                     if (string.IsNullOrEmpty(versionp))
                     {

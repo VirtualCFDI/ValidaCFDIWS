@@ -11,19 +11,25 @@ namespace webservFacturas.conexion
     {
         public static SqlConnection ConexionSQL()
         {
+            
             //Se introducen los datos de la Base de Datos
             SqlConnection cnn = null;
-            /*string conSQL = "Data Source=LUISACA-PC\\DL360G7"
-                                + ";Initial Catalog=Validador"
+            string conSQL = "Data Source=PRUEBASPLATAFOR"
+                                + ";Initial Catalog=validaCFDI"
                                 + ";Persist Security Info=False;User ID=sa"
-                                + ";Password=Pa$$word";*/
-            string conSQL = System.Web.Configuration.WebConfigurationManager.ConnectionStrings["CadenaConexion"].ConnectionString;
+                                + ";Password=ASDasd123*";
             cnn = new SqlConnection(conSQL);
             cnn.Open();
+
             return cnn;
+
+                               
+         //  string conSQL = System.Web.Configuration.WebConfigurationManager.ConnectionStrings["CadenaConexion"].ConnectionString;
+            
+          
         }
 
-        //Función para realiuzar consultas.
+        //Función para realizar consultas.
         public static DataTable Consultasql(string query)
         {
             SqlConnection cnn = ConexionSQL();
@@ -38,17 +44,18 @@ namespace webservFacturas.conexion
         //Función para insertar registros
         public bool InsertaSql(string Query)
         {
-            SqlConnection cnn = ConexionSQL();
             try
             {
+                SqlConnection cnn = ConexionSQL();            
                 SqlCommand comando = new SqlCommand(Query, cnn);
                 comando.ExecuteNonQuery();
+                cnn.Close();
             }
             catch
             {
                 return false;
             }
-            cnn.Close();
+            
             return true;
         }
 

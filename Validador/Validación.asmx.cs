@@ -320,7 +320,7 @@ namespace webservFacturas
                     {
                         RFC_Receptor = Receptor[i].Attributes["rfc"].Value;
                     }
-                    //Leemos los elemetos de domicilio.
+                    //Leemos los elementos de domicilio.
                     XmlNodeList ListaDomRecep = ((XmlElement)Comprobante).GetElementsByTagName("Domicilio");
                     string noExterior_domRecep = "";
                     string municipio_domRecep = "";

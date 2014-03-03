@@ -452,8 +452,6 @@ namespace webservFacturas.funciones
                 "VALUES" +
                 "('" + UUID + "')";
             conexion.InsertaSql(sql);*/
-
-        
                      
         }
 
@@ -681,7 +679,6 @@ namespace webservFacturas.funciones
             if (cantidad == 0)
                 return false;
             else return true;
-
         }
 
         //Función para dar una segunda validación contra Esquema

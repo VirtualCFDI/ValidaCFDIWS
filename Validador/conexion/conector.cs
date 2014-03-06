@@ -14,10 +14,12 @@ namespace webservFacturas.conexion
             
             //Se introducen los datos de la Base de Datos
             SqlConnection cnn = null;
-            string conSQL = "Data Source=PRUEBASPLATAFOR"
+            string conSQL = System.Web.Configuration.WebConfigurationManager.ConnectionStrings["CadenaConexion"].ConnectionString;
+           /* string conSQL = "Data Source=PRUEBASPLATAFOR"
                                 + ";Initial Catalog=validaCFDI"
                                 + ";Persist Security Info=False;User ID=sa"
                                 + ";Password=ASDasd123*";
+            * */
             cnn = new SqlConnection(conSQL);
             cnn.Open();
 

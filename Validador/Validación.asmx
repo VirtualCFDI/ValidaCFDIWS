@@ -1,1 +1,0 @@
-﻿<%@ WebService Language="C#" CodeBehind="Validación.asmx.cs" Class="webservFacturas.Validador" %>

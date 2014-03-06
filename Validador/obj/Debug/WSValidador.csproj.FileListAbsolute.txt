@@ -1,0 +1,4 @@
+C:\Users\Desarollo2\Documents\GitHub\ValidaCFDIWS\Validador\bin\webservFacturas.dll
+C:\Users\Desarollo2\Documents\GitHub\ValidaCFDIWS\Validador\bin\webservFacturas.pdb
+C:\Users\Desarollo2\Documents\GitHub\ValidaCFDIWS\Validador\obj\Debug\webservFacturas.dll
+C:\Users\Desarollo2\Documents\GitHub\ValidaCFDIWS\Validador\obj\Debug\webservFacturas.pdb
